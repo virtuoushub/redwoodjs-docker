@@ -1,6 +1,6 @@
 # ==
 # Base
-FROM node:14-alpine as base
+FROM node:17-alpine as base
 
 WORKDIR /app
 
@@ -26,7 +26,7 @@ RUN yarn rw build api web
 
 # ==
 # Serve
-FROM node:14-alpine as serve
+FROM node:17-alpine as serve
 
 WORKDIR /app
 
